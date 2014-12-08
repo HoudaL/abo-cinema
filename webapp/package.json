@@ -1,0 +1,14 @@
+{
+  "name": "angular-admin",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-connect-proxy": "~0.1.8",
+    "load-grunt-tasks": "~0.4.0"
+  },
+  "dependencies": {
+    "grunt-legacy-log": "^0.1.1",
+    "abbrev": "^1.0.5"
+  }
+}

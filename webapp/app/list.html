@@ -1,0 +1,52 @@
+
+      <div  class="form-group">
+
+               
+                <input id="fetch" type="text" class="form-control" ng-model="input">
+                <a class="btn btn-lg btn-success" ng-click="search()">Rechercher</a>
+            </div>
+
+        <form class="form-inline" role="form">
+
+
+
+            <div class="form-group">
+                <label class="sr-only" for="search">Filter</label>
+                <input id="search" type="text" class="form-control" placeholder="Filter ..." ng-model="searchText">
+            </div>
+        </form>
+
+
+
+    <h2 class="page-header">{{users.length}} users found</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in users | filter:searchText">
+                <td><a ng-href="#/user/{{user.id}}">{{user.id}}</td>
+                <td>{{user.nom}}</a></td>
+                <td>{{user.prenom}}</td>
+                <td>{{user.email}}</td>
+
+            </tr>
+            </tbody>
+        </table>
+        <div class="actions">
+            <a class="btn btn-lg btn-success" ng-href="#/edit/">Ajouter</a>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

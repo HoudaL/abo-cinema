@@ -1,0 +1,10 @@
+{
+  "name": "angular-admin",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.10.2"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

@@ -1,0 +1,56 @@
+<div class="container">
+    <h1>User detail</h1>
+    <form class="my-form">
+        <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" class="form-control" id="name" placeholder="Nom" ng-model="user.nom">
+        </div>
+        <!--div class="form-group">
+            <label for="gender">Sexe *</label>
+            <div class="btn-group">
+                <input type="radio" class="" value="male"> Male
+                <input type="radio" class="" value="female"> Female
+            </div>
+        </div-->
+          <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Prenom" ng-model="user.prenom">
+        </div>
+        <div class="form-group">
+            <label for="email">email *</label>
+            <input type="text" class="form-control" id="email" placeholder="Email" ng-model="user.email">
+        </div>
+        <!--div class="form-group">
+            <label for="role">Role</label>
+            <select class="form-control" id="role" placeholder="role">
+                 <option>admin</option>
+                <option>user</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Age</label>
+            <input type="text" class="form-control" id="age" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <label for="company">Date d inscription</label>
+            <input type="text" class="form-control" id="date" placeholder="Company">
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Address">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="phone">
+        </div>
+        <div class="form-group">
+            <label for="about">About</label>
+            <textarea type="text" class="form-control" id="about" placeholder="about"></textarea>
+        </div-->
+    </form>
+    <div class="actions">
+        <a class="btn btn-lg btn-success" ng-click="addUser(user)">Save</a>
+    </div>
+</div>
+
+
